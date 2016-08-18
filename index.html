@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Google Cutsom</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <script src="js/script.js"></script>
+
+</head>
+<body id="body">
+  <nav>
+    <ul>
+      <li><a href="#">Gmail</a></li>
+      <li><a href="#">Images</a></li>
+      <li><a onclick="dropdownAction()" href="#"><i class="fa fa-th dropdown-toggle"></i></a></li>
+      <li><a onclick="dropdownNotif()" href="#"><i class="fa fa-bell dropdown-toggle"></i></a></li>
+      <li ><a onclick="dropdownAccount()" id="identity" href="#" class="dropdown-toggle">P</a></li>
+    </ul>
+
+    <!-- MENU MODAL APPS GOOGLE -->
+    <div id="dropdown-menu" class="dropdown-content">
+      <div class="col">
+        <a href="#" class="g-link">
+          <figure id="mon-compte"></figure>
+          <p>
+            Mon Compte
+          </p>
+        </a>
+
+        <a href="#" class="g-link">
+          <figure id="youtube"></figure>
+          <p>
+            Youtube
+          </p>
+        </a>
+
+        <a href="#" class="g-link">
+          <figure id="gmail"></figure>
+          <p>
+            Gmail
+          </p>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="#" class="g-link">
+          <figure id="recherche"></figure>
+          <p>
+            Recherche
+          </p>
+        </a>
+
+        <a href="#" class="g-link">
+          <figure id="play"></figure>
+          <p>
+            Play
+          </p>
+        </a>
+
+        <a href="#" class="g-link">
+          <figure id="drive"></figure>
+          <p>
+            Drive
+          </p>
+        </a>
+      </div>
+
+      <div class="col">
+        <a href="#" class="g-link">
+          <figure id="maps"></figure>
+          <p>
+            Maps
+          </p>
+        </a>
+
+        <a href="#" class="g-link">
+          <figure id="actualites"></figure>
+          <p>
+            Actualités
+          </p>
+        </a>
+
+        <a href="#" class="g-link">
+          <figure id="agenda"></figure>
+          <p>
+            Agenda
+          </p>
+        </a>
+      </div>
+    </div>
+    <!-- FIN MENU MODAL APPS GOOGLE -->
+
+
+    <!-- MODAL NOTIFICATIONS -->
+    <div id="notification" class="dropdown-content">
+      <p>
+        Notifications Google
+      </p>
+
+      <div class="bell-center">
+        <p>Terminé !</p>
+        <figure></figure>
+      </div>
+
+      <a href="#">Déjà lues (Google+)</a>
+    </div>
+    <!-- FIN MODAL NOTIF -->
+
+
+    <!-- MODAL COMPTE -->
+    <div id="compte" class="dropdown-content">
+      <div class="info-container">
+        <div class="p-image-container">
+          <a class="p-image">
+            <p>
+              Modifier
+            </p>
+          </a>
+        </div>
+
+
+        <div class="info-content">
+          <p>
+            James Brown
+          </p>
+          <p>
+            jamesbrown@gmail.com
+          </p>
+          <div class="googlelinks">
+            <a href="#">Profil Google+</a>
+            <a href="#">Confidentialité</a>
+          </div>
+          <a class="btn-account" href="#">Mon compte</a>
+        </div>
+      </div>
+
+      <div class="footer-compte">
+        <a href="#">Ajouter un compte</a>
+        <a href="#">Déconnexion</a>
+      </div>
+    </div>
+    <!-- FIN MODAL COMPTE -->
+
+
+
+  </nav>
+  <section id="main">
+    <a href="#" id="central-logo"></a>
+
+    <div class="side-icons">
+      <a href="#"><img src="img/ananas.png" alt="" /></a>
+      <a href="#"><img src="img/link.png" alt="" /></a>
+    </div>
+
+    <form class="" action="index.html" method="post">
+      <input id="search" type="text" name="search" value="">
+      <div class="submit-container">
+        <button type="button" name="recherche Google" onclick="getVariable()">Recherche Google</button>
+        <button type="button" name="J'ai de la chance">J'ai de la chance</button>
+      </div>
+
+    </form>
+  </section>
+
+  <footer>
+    <ul>
+      <li><a href="#">Publicité</a></li>
+      <li><a href="#">Entreprise</a></li>
+      <li><a href="#">A propos</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="#">Confidentialité</a></li>
+      <li><a href="#">Conditions</a></li>
+      <li><a href="#">Paramètres</a></li>
+    </ul>
+
+  </footer>
+
+</body>
+</html>
